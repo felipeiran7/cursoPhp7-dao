@@ -15,8 +15,22 @@
 
  	//carrega usuario usando login e senha
 
- 	$usuario= new Usuario();
+ 	/*$usuario= new Usuario();
  	$usuario-> login("felipe","32322");
+
+ 	echo $usuario;*/
+
+ 	/*
+	Criando um novo usuário
+ 	$aluno= new Usuario("marcos", "3323");
+
+ 	$aluno->insert();
+
+ 	echo $aluno;*/
+
+ 	$usuario= new Usuario();
+ 	$usuario->loadById(8);
+ 	$usuario->update("professor","sasasw3");
 
  	echo $usuario;
 
